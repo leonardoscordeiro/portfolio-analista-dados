@@ -2,18 +2,14 @@
 import { 
   ArrowRight, 
   BarChart3, 
-  Code2, 
   Database, 
-  LineChart, 
   TrendingUp, 
   Zap, 
   Github, 
   Linkedin, 
   Mail, 
   BrainCircuit,
-  LayoutDashboard,
-  Layers,
-  Terminal
+  LayoutDashboard
 } from 'lucide-react';
 import Link from 'next/link';
 
@@ -115,30 +111,30 @@ export default function Home() {
               </Link>
               
               <div className="flex items-center gap-3">
-                <Link 
-                  href="https://linkedin.com/in/seulinkedin" 
+                <a 
+                  href="https://www.linkedin.com/in/leonardoscordeiro/" 
                   target="_blank"
                   className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all"
                 >
                   <Linkedin className="h-5 w-5" />
-                </Link>
-                <Link 
+                </a>
+                <a 
                   href="https://github.com/leonardoscordeiro" 
                   target="_blank"
                   className="flex h-12 w-12 items-center justify-center rounded-full border border-slate-700 bg-slate-800/50 text-slate-300 hover:bg-gray-100 hover:border-white hover:text-black transition-all"
                 >
                   <Github className="h-5 w-5" />
-                </Link>
+                </a>
               </div>
             </div>
           </div>
         </div>
         
-        {/* Bottom fade */}
+        {/* Bottom fade: Do fundo escuro para o claro */}
         <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-white to-transparent" />
       </section>
 
-      {/* Projects Overview - The "Tier List" Concept */}
+      {/* Projects Overview */}
       <section className="py-24 relative">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -215,7 +211,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Tech Stack - Categorized */}
+      {/* Tech Stack */}
       <section className="py-24 bg-slate-50">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
@@ -255,11 +251,16 @@ export default function Home() {
 
       {/* Final CTA / Contact */}
       <section className="relative isolate overflow-hidden bg-slate-900 py-24 sm:py-32">
+        {/* --- NOVO FADE NO TOPO --- */}
+        {/* Cria uma transição suave do bg-slate-50 anterior para o transparente */}
+        <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-slate-50 to-transparent z-10" />
+
         <div className="absolute left-[50%] top-0 -z-10 -translate-x-1/2 blur-3xl xl:-top-6">
-          <div className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }} />
+          <div className="aspect-[1155/678] w-[71.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style={{ clipPath: 'polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)' }} />
         </div>
         
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+        {/* Adicionei 'relative z-10' aqui para o texto ficar sobre o fade */}
+        <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center">
           <div className="mx-auto max-w-2xl">
             <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
               Vamos conversar sobre dados?

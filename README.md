@@ -1,36 +1,18 @@
-cat > README.md << 'EOF'
-# 🎯 Portfólio de Análise de Dados
+# 🎯 Portfólio de Análise de Dados - Leonardo Cordeiro
 
-Portfólio profissional com 9 projetos demonstrando habilidades em análise de dados, organizados em 3 níveis: C (Fundamental), B (Intermediário), A (Avançado).
+## 🌐 Acesso Online
+**Site:** [https://portfolio-analista-dados.vercel.app](https://portfolio-analista-dados.vercel.app)
+
+**Repositório:** [https://github.com/leonardoscordeiro/portfolio-analista-dados](https://github.com/leonardoscordeiro/portfolio-analista-dados)
 
 ## 🚀 Tecnologias
-- Next.js 14 (App Router)
-- TypeScript
-- Tailwind CSS
-- Framer Motion
-- Supabase (PostgreSQL)
-- Vercel (Deploy)
+- Next.js 14 + TypeScript
+- Tailwind CSS + Framer Motion
+- Vercel (Deploy Automático)
+- Supabase (Backend)
 
-## 📊 Projetos Incluídos
-1. Dashboard Executivo com KPIs (Nível C)
-2. Análise Exploratória E-commerce (Nível C)
-3. Relatório Automatizado (Nível C)
-4. Análise de Churn (Nível B)
-5. ROI da Black Friday (Nível B)
-6. Otimização de Processo (Nível B)
-7. Previsão de Demanda (Nível A)
-8. Análise de Impacto Causal (Nível A)
-9. Sistema de Priorização (Nível A)
 
-## 🛠️ Como Executar Localmente
-```bash
-# Clone o repositório
-git clone https://github.com/seu-usuario/portfolio-analista-dados
-
-# Instale dependências
-npm install
-
-# Execute em desenvolvimento
-npm run dev
-
-# Acesse http://localhost:3000
+![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-Open_Source-181717?logo=github&logoColor=white)
